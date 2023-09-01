@@ -1,0 +1,35 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "paths": {
+      "@domain/*": ["src/core/domain/*"],
+      "@application/*": ["src/core/application/*"],
+      "@infrastructure/*": ["./src/infrastructure/*"],
+      "@components/*": ["src/infrastructure/react-native-adapter/components/*"],
+      "@hooks/*": ["src/infrastructure/react-native-adapter/hooks/*"],
+      "@navigation/*": ["src/infrastructure/react-native-adapter/navigation/*"],
+      "@screens/*": ["src/infrastructure/react-native-adapter/screens/*"],
+      "@stores/*": ["src/infrastructure/react-native-adapter/stores/*"],
+      "@styles/*": ["src/infrastructure/react-native-adapter/styles/*"]
+    },
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "importHelpers": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}

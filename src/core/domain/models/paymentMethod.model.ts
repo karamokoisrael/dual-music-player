@@ -1,0 +1,30 @@
+export interface PaymentMethod {
+  id: number;
+  currency: string;
+  name: string;
+  symbol: string;
+  iconUrl: string;
+  paymentType: "mobile_money" | "credit_card" | "token" | "crypto";
+  cgKey: string;
+  paymentKey: string;
+  paymentOrchestrator: string;
+  usdPrice: number;
+  minTransferAmount: number;
+  transferPercentage: number;
+  receptionPercentage: number;
+  memePercentage: number;
+  receptionAutomated: boolean;
+  transferAutomated: boolean;
+  onlyForReception: boolean;
+  onlyForTransfer: boolean;
+  unavailable: boolean;
+  inputSample: string;
+  inputRegex: string | null;
+  inputErrorMessage: string | null;
+  receptionAddress: string | null;
+  memo: string | null;
+  transactionDataRequired: boolean;
+  precision: number;
+  transferPlaceholderRequired: boolean;
+  paymentUrl: string;
+}

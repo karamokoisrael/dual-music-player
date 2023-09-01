@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "zupsic.com",
+    "slug": "zupsic",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logo.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/images/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "userInterfaceStyle": "light"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/logo.png",
+        "backgroundColor": "#ffffff"
+      },
+      "userInterfaceStyle": "light"
+    },
+    "web": {
+      "favicon": "./assets/images/favicon.ico",
+      "userInterfaceStyle": "light"
+    },
+    "plugins": [
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to access your musics.",
+          "savePhotosPermission": "Allow $(PRODUCT_NAME) to save musir.",
+          "isAccessMediaLocationEnabled": true
+        }
+      ]
+    ]
+  }
+}
